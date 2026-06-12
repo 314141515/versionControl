@@ -15,7 +15,7 @@ function completeTodo(id) {
   if (todo) { todo.done = true; console.log(`Completed: "${todo.text}"`); }
 }
 
-addTodo("Learn Git");
+addTodo("Learn Github");
 addTodo("Build Todo App");
 listTodos();
 
