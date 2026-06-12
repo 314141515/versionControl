@@ -19,4 +19,9 @@ addTodo("Learn Git");
 addTodo("Build Todo App");
 listTodos();
 
-module.exports = { addTodo, listTodos, completeTodo };
+function deleteTodo(id) {
+  const index = todos.findIndex(t => t.id === id);
+  if (index !== -1) { todos.splice(index, 1); console.log(`Deleted todo ${id}`); }
+}
+
+module.exports = { addTodo, listTodos, completeTodo, deleteTodo };
