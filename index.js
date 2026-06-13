@@ -1,8 +1,8 @@
 const todos = [];
 
-function addTodo(text) {
-  todos.push({ id: Date.now(), text, done: false });
-  console.log(`Added: "${text}"`);
+function addTodo(text, dueDate) {
+  todos.push({ id: Date.now(), text, done: false, dueDate });
+  console.log(`Added: "${text}" (due: ${dueDate})`);
 }
 
 function listTodos() {
@@ -15,8 +15,8 @@ function completeTodo(id) {
   if (todo) { todo.done = true; console.log(`Completed: "${todo.text}"`); }
 }
 
-addTodo("Learn Github");
-addTodo("Build Todo App");
+addTodo("Learn Git", "2024-01-15");
+addTodo("Build Todo App", "2024-01-20");
 listTodos();
 
 function deleteTodo(id) {
