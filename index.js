@@ -15,11 +15,7 @@ function completeTodo(id) {
   if (todo) { todo.done = true; console.log(`Completed: "${todo.text}"`); }
 }
 
-<<<<<<< HEAD
 addTodo("Learn Github");
-=======
-addTodo("Git Branching");
->>>>>>> adding-card
 addTodo("Build Todo App");
 listTodos();
 
