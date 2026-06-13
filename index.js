@@ -24,4 +24,5 @@ function deleteTodo(id) {
   if (index !== -1) { todos.splice(index, 1); console.log(`Deleted todo ${id}`); }
 }
 
+console.log("Total todos:", todos.length);
 module.exports = { addTodo, listTodos, completeTodo, deleteTodo };
